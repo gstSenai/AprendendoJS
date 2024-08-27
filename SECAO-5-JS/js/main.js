@@ -4,7 +4,7 @@
 
 // console.log(lista)
 
-// console.log(typeof(lista))
+// console.log(typeof lista)
 
 // const itens = ["Matheus", true, 2, 4.12,[]];
 
@@ -320,26 +320,81 @@
 
 // 24 - for of
 
-const somaInfinita2 = (...args) =>{
-    let total = 0
+// const somaInfinita2 = (...args) => {
+//     let total = 0
 
-    for(num of args){
-        total += num
-    }
+//     for (num of args) {
+//         total += num
+//     }
 
-    return total;
-};
+//     return total;
+// };
 
-console.log(somaInfinita2(1,5,7,4,2,3,6));
+// console.log(somaInfinita2(1, 5, 7, 4, 2, 3, 6));
 
 
-// 25 - destructuring em objetos 
-const userDetails = {
-    firstName: "Gustavo", 
-    lastName: "Souza",
-    job: "Programador"
-}
+// // 25 - destructuring em objetos 
+// const userDetails = {
+//     firstName: "Gustavo",
+//     lastName: "Souza",
+//     job: "Programador"
+// }
 
-const {firstName, lastName, job} = userDetails;
+// const { firstName, lastName, job } = userDetails;
 
-console.log(firstName, lastName, job);
+// console.log(firstName, lastName, job);
+
+// // renomear variaveis
+
+// const { firstName: primeiroNome, lastName: ultimoNome } = userDetails;
+
+// console.log(firstName);
+// console.log(primeiroNome);
+
+// console.log(ultimoNome);
+
+// // 26 - Destructuring em arrays
+// const myList = ["Avião", "Submarino", "Carro", "Trator"]
+
+// const [veiculoA, veiculoB, veiculoC, veiculoD] = myList;
+
+// console.log(veiculoA, veiculoB, veiculoC, veiculoD);
+
+// // 27 - JSON
+
+// const myJson = '{"name" : "Gustavo", "age" : 18, "skills" : ["PHP", "Java", "Python"]}';
+
+// console.log(myJson);
+
+// console.log(typeof myJson);
+
+// // 28 - Json para objeto e objeto para Json
+
+// const myObject = JSON.parse(myJson);
+
+// console.log(myObject);
+
+// console.log(myObject.name);
+
+// console.log(typeof myObject);
+
+// //json invalido 
+
+// const badJson = '{"name" : Gustavo, "age" : 18}';
+
+// //const myBadJson = JSON.parse(badJson);
+
+// // add no JSON
+
+// myObject.isOpenToWork = true;
+
+// console.log(myObject);
+
+// // Objeto para JSON
+
+// const myNewJson = JSON.stringify(myObject)
+
+// console.log(myNewJson);
+
+// console.log(typeof myNewJson);
+
