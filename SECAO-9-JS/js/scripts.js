@@ -1,27 +1,28 @@
 // 1 - movendo pelo DOM
 
-// console.log(document.body);
+console.log(document.body);
 
-// console.log(document.body.childNodes[1].childNodes);
+console.log(document.body.childNodes[1].childNodes);
 
-// console.log(document.body.childNodes[1].childNodes[1].textContent);
+console.log(document.body.childNodes[1].childNodes[1].textContent);
 
-// // 2 - selecionando por tag
-// const listItens = document.getElementsByTagName("li");
+// 2 - selecionando por tag
 
-// console.log(listItens);
+const listItens = document.getElementsByTagName("li");
 
-// // 3 - selecionando por id
+console.log(listItens);
 
-// const selectID = document.getElementById("title");
+// 3 - selecionando por id
 
-// console.log(selectID);
+const selectID = document.getElementById("title");
 
-// // 4 - selecionando por classe
+console.log(selectID);
 
-// const selectClass = document.getElementsByClassName("product");
+// 4 - selecionando por classe
 
-// console.log(selectClass);
+const selectClass = document.getElementsByClassName("product");
+
+console.log(selectClass);
 
 // 5 - selecionando os elementos por css
 
@@ -35,63 +36,74 @@ console.log(mainContainer);
 
 // 6 - insertBefore
 
-// const p = document.createElement("p");
+const p = document.createElement("p");
 
-// const header = selectID.parentElement
+const header = selectID.parentElement
 
-// console.log(header);
+console.log(header);
 
-// header.insertBefore(p, selectID)
+header.insertBefore(p, selectID)
 
-// // 7 - appendChild
-// const navLinks = document.querySelector("nav ul");
+// 7 - appendChild
+const navLinks = document.querySelector("nav ul");
 
-// const li = document.createElement("li");
+const li = document.createElement("li");
 
-// navLinks.appendChild(li);
+navLinks.appendChild(li);
 
-// // 8 - replaceChild
-// const h5 = document.createElement("h5");
+// 8 - replaceChild
+const h5 = document.createElement("h5");
 
-// h5.textContent = "Meu Novo Titulo!";
+h5.textContent = "Meu Novo Titulo!";
 
-// header.replaceChild(h5, selectID);
+header.replaceChild(h5, selectID);
 
-// // 9 - createTextNode
-// const myText = document.createTextNode("Agora vamos colocar mais um titulo");
+// 9 - createTextNode
+const myText = document.createTextNode("Agora vamos colocar mais um titulo");
 
-// console.log(myText);
+console.log(myText);
 
-// const h3 = document.createElement("h3");
+const h3 = document.createElement("h3");
 
-// h3.appendChild(myText);
+h3.appendChild(myText);
 
-// console.log(h3);
+console.log(h3);
 
-// mainContainer.appendChild(h3);
+mainContainer.appendChild(h3);
 
-// // 10 - trabalhando com atributos 
+// 10 - trabalhando com atributos 
 
-// const firstLink = navLinks.querySelector("a")
+const firstLink = navLinks.querySelector("a")
 
-// console.log(firstLink);
+console.log(firstLink);
 
-// firstLink.setAttribute("href", "https://www.google.com");
+firstLink.setAttribute("href", "https://www.google.com");
 
-// console.log(firstLink.getAttribute("href"));
+console.log(firstLink.getAttribute("href"));
 
-// firstLink.setAttribute("target", "_blank");
+firstLink.setAttribute("target", "_blank");
 
 // // 11 - altura e largura 
-// const footer = document.querySelector("footer");
+const footer = document.querySelector("footer");
 
-// console.log(footer.offsetWidth);
-// console.log(footer.offsetHeight);
+console.log(footer.offsetWidth);
+console.log(footer.offsetHeight);
 
-// console.log(footer.clientHeight);
-// console.log(footer.clientWidth);
+console.log(footer.clientHeight);
+console.log(footer.clientWidth);
 
 // 12 - posicao do elemento
 const product1 = productsQuery[0]
 
 console.log(product1.getBoundingClientRect());
+
+// 13 - CSS com JS
+
+mainContainer.style.color = "red";
+mainContainer.style.backgroundColor = "blue";
+mainContainer.style.paddingBottom = "4rem";
+
+// 14 - Alterando estilos de varios elementos
+for (const li of listItens){
+    li.style.backgroundColor = "grey";
+}
